@@ -13,26 +13,93 @@ body, h1, h2, h3, h4, h5, h6 {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
 }
+.navbar-nav {
+  width: 100%;
+  text-align: center;
+}
+
+.navbar-nav > li {
+  float: none;
+  display: inline-block;
+}
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: lightgreen;
+}
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+.nav-item {
+  margin-left: 100px;
+}
+
+.navbar {
+  background: blueviolet;
+}
 
 .intro-header {
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
   color: #f8f8f8;
-  background: url(../img/intro-bg.jpg) no-repeat center center;
+  background: url(../img/main2.jpg) no-repeat center center;
   background-size: cover;
+  z-index: 1;
 }
 
+.iphone-right {
+  position: absolute;
+  z-index: 2;
+  top: 30%;
+  left: -2%;
+  -moz-transform: rotate(15deg); /* Для Firefox */
+  -ms-transform: rotate(15deg); /* Для IE */
+  -webkit-transform: rotate(15deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(15deg); /* Для Opera */
+  transform: rotate(15deg);
+}
+
+.iphone-left {
+  position: absolute;
+  z-index: 2;
+  top: 80%;
+  left: 75%;
+  -moz-transform: rotate(15deg); /* Для Firefox */
+  -ms-transform: rotate(15deg); /* Для IE */
+  -webkit-transform: rotate(15deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(15deg); /* Для Opera */
+  transform: rotate(15deg);
+}
+
+
+.logo {
+  position: absolute;
+  top: 35%;
+  z-index: 2;
+  right: 2%;
+}
 .intro-message {
   position: relative;
-  padding-top: 20%;
-  padding-bottom: 20%;
+  text-align: left;
+  padding-left: 20%;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 .intro-message>h1 {
   margin: 0;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-  font-size: 5em;
+  color: white;
+  font-size: 3em;
 }
 
 .intro-divider {
@@ -43,6 +110,7 @@ body, h1, h2, h3, h4, h5, h6 {
 
 .intro-message>h3 {
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+  margin-left: 5px;
 }
 
 .intro-social-buttons i {
@@ -77,12 +145,71 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 .content-section-a {
+  padding: 50px 27%;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.content-section-c {
   padding: 50px 0;
   background-color: #f8f8f8;
+  text-align: center;
+}
+
+.green {
+  background: green;
+}
+
+.violet {
+  background: blueviolet;
+}
+
+.custom-badge {
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  padding: 5px 15px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  width: 170px;
+  height: 110px;
+}
+
+.custom-badge2 {
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  padding: 5px 15px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  height: 91px;
+}
+
+.custom-badge3 {
+  border-radius: 15px;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  padding: 5px 15px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  height: 85px;
+}
+
+.scroller > li {
+  margin-left: 30px;
+}
+
+.badge-icon-font {
+  font-size: 50px;
+}
+
+.badge-text-font {
+  font-size: 12px;
 }
 
 .content-section-b {
-  padding: 50px 0;
+  padding: 75px 50px;
   border-top: 1px solid #e7e7e7;
   border-bottom: 1px solid #e7e7e7;
 }
@@ -98,10 +225,11 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 .banner {
-  padding: 100px 0;
+  padding: 50px 200px;
   color: #f8f8f8;
-  background: url(../img/banner-bg.jpg) no-repeat center center;
-  background-size: cover;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+  text-align: center;
 }
 
 .banner h2 {
